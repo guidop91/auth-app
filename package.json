@@ -1,0 +1,11 @@
+{
+  "name": "auth-app",
+  "version": "1.0.0",
+  "description": "Authorization app example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guido Perdomo by way of Dev Ed",
+  "license": "ISC"
+}
