@@ -18,7 +18,10 @@ const mongooseOptions = {
 };
 mongoose.connect(dbUrl, mongooseOptions, () => console.log('Connected to DB'));
 
-// Middlewares
+// Add middlewares
+app.use(express.json());
+
+// Route middlewares
 app.use('/api/user', authRoute);
 
 const port = process.env.PORT;
