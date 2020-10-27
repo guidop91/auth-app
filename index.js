@@ -3,6 +3,7 @@ const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 
 const authRoute = require('./routes/auth');
+const getPosts = require('./routes/getPosts');
 
 dotenv.config();
 
@@ -23,6 +24,7 @@ app.use(express.json());
 
 // Route middlewares
 app.use('/api/user', authRoute);
+app.use('/', getPosts);
 
 const port = process.env.PORT;
 app.listen(port, () => console.log(`Listening on port ${port}`));
